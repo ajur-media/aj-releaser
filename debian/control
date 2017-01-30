@@ -1,0 +1,11 @@
+Source: aj-releaser
+Section: unknown
+Priority: optional
+Maintainer: Paul Petrov <bargamut@fontanka.ru>
+Build-Depends: debhelper (>> 7.0.0)
+Standards-Version: 3.5.2
+
+Package: aj-releaser
+Architecture: all
+Description: Пилотные скрипты AjReleaser
+ Для сборки и фиксации пакетов тестовых версий и релизов.
