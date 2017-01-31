@@ -1,3 +1,10 @@
+aj-releaser (0.2.0) unstable; urgency=medium
+
+  * Большая часть кода вынесена в библиотеку функций
+  * Исправлен баг продолжающейся установки даже при сбое сборки пакета
+
+ -- Paul Petrov <bargamut@fontanka.ru>  Tue, 31 Jan 2017 18:43:45 +0300
+
 aj-releaser (0.1.0) unstable; urgency=low
 
   * Функция сборки И установки пакета
