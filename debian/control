@@ -7,5 +7,6 @@ Standards-Version: 3.5.2
 
 Package: aj-releaser
 Architecture: all
+Depends: dpkg (>= 1.17.21)
 Description: Пилотные скрипты AjReleaser
  Для сборки и фиксации пакетов тестовых версий и релизов.
