@@ -1,3 +1,15 @@
+aj-releaser (0.3.0) unstable; urgency=medium
+
+  * Дополнительно спрашиваем об установке
+
+ -- Paul Petrov <bargamut@fontanka.ru>  Thu, 20 Apr 2017 19:03:33 +0300
+
+aj-releaser (0.2.1) unstable; urgency=medium
+
+  * Добавление упущенной зависимости от dpkg (>= 1.17.21) 
+
+ --  Paul Petrov <bargamut@fontanka.ru>  Tue, 14 Mar 2017 20:06:29 +0300
+
 aj-releaser (0.2.0) unstable; urgency=medium
 
   * Большая часть кода вынесена в библиотеку функций

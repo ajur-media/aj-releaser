@@ -10,7 +10,7 @@ source $SCRIPT_DIR/lib.sh
 source $SCRIPT_DIR/config.cfg
 
 # Не случайно ли запустили?
-ask_YN "Установить пакет ${package}?" || exit $?
+ask_YN "Собрать пакет ${package}?" || exit $?
 
 # Полезная работа
 build
@@ -18,6 +18,8 @@ BUILD_STATUS=$?
 
 if [ $BUILD_STATUS -eq 0 ]
 then
+  # Не случайно ли запустили?
+  ask_YN "Установить пакет ${package}?" || exit $?
   install $pkgpath
 fi
 exit 0
