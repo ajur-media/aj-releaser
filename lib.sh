@@ -1,7 +1,7 @@
 #!/bin/bash
 
-red=$(tput setf 4)
-green=$(tput setf 2)
+red=$(tput setaf 4)
+green=$(tput setaf 2)
 reset=$(tput sgr0)
 toend=$(tput hpa $(tput cols))$(tput cub 6)
 
