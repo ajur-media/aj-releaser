@@ -9,6 +9,14 @@ SCRIPT_DIR="$( cd "$( dirname $(readlink -e "${BASH_SOURCE[0]}") )" && pwd )"
 source $SCRIPT_DIR/lib.sh
 source $SCRIPT_DIR/config.cfg
 
+# подключаем пользовательский конфиг, если есть
+if [ -e $HOME/.ajr/local.cfg ]; then
+	source $HOME/.ajr/local.cfg
+fi
+
+# переменные пути пакета
+source $SCRIPT_DIR/pkgvars.cfg
+
 echo "${bold}AJ Builder ${version}${reset}"
 tail "$SCRIPT_DIR/readme.txt"
 echo
@@ -40,6 +48,8 @@ if [[ $BUILD_STATUS -eq 0 && $WAY -ne 1 && $WAY -ne 254 ]]; then
     ${bold}[ * ] n - пропустить,${reset}
     [   ] q - прекратить работу." "n"
 		WAY=$?
+	elif [ "$distrib" == 'UNRELEASED' ]; then
+		echo "${red}Запись в репозиторий невозможна: статус пакета UNRELEASED.${reset}"
 	else
 		echo "${yellow}Пропускаем запись в репозиторий: операция должна быть выполнена вручную.${reset}"
 	fi
@@ -55,6 +65,7 @@ fi
 
 if [ $WAY -ne 1 ]; then
 	# Хотим ли ставить?
+	echo $pkgpath
 	ask_YN "Установить пакет ${package}?" "[   ] y - да,
     ${bold}[ * ] n - пропустить,${reset}
     [   ] q - прекратить работу." "n"
