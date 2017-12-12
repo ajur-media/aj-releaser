@@ -1,3 +1,9 @@
+aj-releaser (0.6.1) unstable; urgency=medium
+
+  * Fixed Execution permission for ajr.sh
+
+ -- Vasiliy Misharev <druid@ajur.info>  Tue, 12 Dec 2017 17:02:50 +0300
+
 aj-releaser (0.6.0) unstable; urgency=medium
 
   * BugFix: не учитывалась кастомная папка для проектов (по умолчанию стоит $HOME).
