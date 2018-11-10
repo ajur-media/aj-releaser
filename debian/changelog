@@ -1,3 +1,10 @@
+aj-releaser (1.0.0) stable; urgency=medium
+
+  * Modify README.md
+  * Release v1.0.0
+
+ -- Paul Petrov <paul@bargamut.ru>  Sat, 10 Nov 2018 19:38:49 +0300
+
 aj-releaser (0.6.1) unstable; urgency=medium
 
   * Fixed Execution permission for ajr.sh
