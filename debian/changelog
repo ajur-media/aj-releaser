@@ -1,3 +1,48 @@
+aj-releaser (1.0.0) stable; urgency=medium
+
+  * Modify README.md
+  * Release v1.0.0
+
+ -- Paul Petrov <paul@bargamut.ru>  Sat, 10 Nov 2018 19:38:49 +0300
+
+aj-releaser (0.6.1) unstable; urgency=medium
+
+  * Fixed Execution permission for ajr.sh
+
+ -- Vasiliy Misharev <druid@ajur.info>  Tue, 12 Dec 2017 17:02:50 +0300
+
+aj-releaser (0.6.0) unstable; urgency=medium
+
+  * BugFix: не учитывалась кастомная папка для проектов (по умолчанию стоит $HOME).
+  * Теперь можно переопределить переменные основгого конфига в локальном: ~/.ajr/local.cfg
+  * Конфиг имени/пути пакета отделён от основного конфига
+  * Мелкие правки
+
+ -- Paul Petrov <bargamut@fontanka.ru>  Fri, 25 Aug 2017 18:41:23 +0300
+
+aj-releaser (0.5.0) unstable; urgency=medium
+
+  * Смена алгоритма работы: можно без вреда пропустить ненужные операции
+  * Модернизация алгоритма "быстрой сборки"
+  * Добавлена возможность записи в репозиторий
+    только в ручном режиме после сборки нового релиза (un|stable)
+  * Памятка при старте
+
+ -- Paul Petrov <bargamut@fontanka.ru>  Tue, 04 Jul 2017 23:21:23 +0300
+
+aj-releaser (0.4.0) unstable; urgency=medium
+
+  * Добавлена возможность удаления deb-файла после установки пакета
+  * Добавлена возможность ответить разом на все вопросы (ответить Y)
+
+ -- Paul Petrov <bargamut@fontanka.ru>  Tue, 04 Jul 2017 20:11:34 +0300
+
+aj-releaser (0.3.1) unstable; urgency=medium
+
+  * Правка цветов
+
+ -- Paul Petrov <bargamut@fontanka.ru>  Mon, 03 Jul 2017 20:47:10 +0300
+
 aj-releaser (0.3.0) unstable; urgency=medium
 
   * Дополнительно спрашиваем об установке

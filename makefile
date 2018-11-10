@@ -12,4 +12,7 @@ pkg_part:
 	cp ./ajr.sh $(PKG_ROOT)/
 	cp ./lib.sh $(PKG_ROOT)/
 	cp ./config.cfg $(PKG_ROOT)/
+	cp ./pkgvars.cfg $(PKG_ROOT)/
+	cp ./readme.txt $(PKG_ROOT)/
 	ln -s /usr/local/etc/aj-releaser/ajr.sh $(PKG_LAUNCH)/ajr
+	mkdir -p $(HOME)/.ajr
